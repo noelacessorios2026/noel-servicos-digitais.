@@ -1,0 +1,1045 @@
+/* ==========================================
+   NOEL SERVIÇOS DIGITAIS
+   STYLE.CSS
+   Parte 1
+========================================== */
+
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f3f4f6;
+    color:#111;
+    line-height:1.6;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+button{
+
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+
+    background:#111;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 30px;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.20);
+
+}
+
+.logo{
+
+    width:180px;
+
+}
+
+
+/* Pesquisa */
+
+.pesquisa{
+
+    width:45%;
+
+    display:flex;
+
+}
+
+.pesquisa input{
+
+    flex:1;
+
+    padding:12px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:8px 0 0 8px;
+
+    font-size:16px;
+
+}
+
+.pesquisa button{
+
+    width:55px;
+
+    border:none;
+
+    background:#FFD400;
+
+    color:#111;
+
+    border-radius:0 8px 8px 0;
+
+    font-size:18px;
+
+}
+
+.pesquisa button:hover{
+
+    background:#00AEEF;
+
+    color:white;
+
+}
+
+
+/* Carrinho */
+
+.icone-carrinho{
+
+    color:white;
+
+    font-size:30px;
+
+    position:relative;
+
+}
+
+#contadorCarrinho{
+
+    position:absolute;
+
+    top:-8px;
+
+    right:-10px;
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+    background:red;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+}
+
+
+/* ==========================================
+   WHATSAPP
+========================================== */
+
+.whatsapp-fixo{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:36px;
+
+    z-index:9999;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    animation:zap 2s infinite;
+
+}
+
+.whatsapp-fixo:hover{
+
+    transform:scale(1.15);
+
+}
+
+
+/* ==========================================
+   BANNER
+========================================== */
+
+.banner{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.banner img{
+
+    width:100%;
+
+    height:500px;
+
+    object-fit:cover;
+
+    filter:brightness(.60);
+
+    transition:1s;
+
+}
+
+.banner:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.banner-texto{
+
+    position:absolute;
+
+    top:50%;
+
+    left:70px;
+
+    transform:translateY(-50%);
+
+    color:white;
+
+    max-width:550px;
+
+}
+
+.banner-texto h2{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+    text-shadow:2px 2px 8px rgba(0,0,0,.50);
+
+}
+
+.banner-texto p{
+
+    font-size:20px;
+
+    margin-bottom:25px;
+
+}
+
+.banner button{
+
+    background:#FFD400;
+
+    color:#111;
+
+    border:none;
+
+    padding:16px 35px;
+
+    border-radius:10px;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+}
+
+.banner button:hover{
+
+    background:#00AEEF;
+
+    color:white;
+
+}
+
+
+/* ==========================================
+   ANIMAÇÕES
+========================================== */
+
+@keyframes zap{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.12);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}/* ==========================================
+   NOEL SERVIÇOS DIGITAIS
+   STYLE.CSS
+   Parte 2
+========================================== */
+
+
+/* ============================
+   TÍTULOS DAS SEÇÕES
+============================ */
+
+section h2{
+
+    text-align:center;
+
+    font-size:34px;
+
+    margin-bottom:35px;
+
+    color:#111;
+
+    font-weight:700;
+
+}
+
+
+/* ============================
+   PRODUTOS EM DESTAQUE
+============================ */
+
+.destaques{
+
+    background:#fff;
+
+    padding:60px 30px;
+
+}
+
+.galeria-destaque{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+.item{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.10);
+
+    transition:.35s;
+
+}
+
+.item:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.20);
+
+}
+
+.item img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.item h3{
+
+    padding:18px;
+
+    text-align:center;
+
+    color:#111;
+
+}
+
+
+/* ============================
+   LISTA DE PRODUTOS
+============================ */
+
+.lista-produtos{
+
+    padding:50px 30px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.produto{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.10);
+
+    transition:.35s;
+
+    text-align:center;
+
+}
+
+.produto:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.20);
+
+}
+
+.produto img{
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:contain;
+
+    background:#fafafa;
+
+    padding:15px;
+
+}
+
+.produto h3{
+
+    margin:18px 15px 8px;
+
+    font-size:20px;
+
+}
+
+.produto p{
+
+    margin:0 15px 15px;
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+.preco{
+
+    color:#00a651;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    margin-bottom:18px;
+
+}
+
+.produto button{
+
+    width:90%;
+
+    margin:15px auto 20px;
+
+    display:block;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#FFD400;
+
+    color:#111;
+
+    font-weight:bold;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.produto button:hover{
+
+    background:#00AEEF;
+
+    color:#fff;
+
+}
+
+
+/* ============================
+   CATEGORIAS
+============================ */
+
+.categorias{
+
+    background:#fff;
+
+    padding:50px 20px;
+
+    text-align:center;
+
+}
+
+.categoria{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:12px;
+
+}
+
+.categoria button{
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#FFD400;
+
+    color:#111;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.categoria button:hover{
+
+    background:#00AEEF;
+
+    color:#fff;
+
+}
+
+
+/* ============================
+   SERVIÇOS GRÁFICOS
+============================ */
+
+.servicos-graficos{
+
+    background:#fff;
+
+    padding:60px 30px;
+
+}
+
+.cards-graficos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:30px;
+
+}
+
+.card-grafico{
+
+    background:#111;
+
+    color:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.20);
+
+    transition:.35s;
+
+}
+
+.card-grafico:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card-grafico img{
+
+    width:100%;
+
+    height:200px;
+
+    object-fit:cover;
+
+}
+
+.card-grafico h3{
+
+    color:#FFD400;
+
+    margin:18px 0 10px;
+
+}
+
+.card-grafico p{
+
+    padding:0 18px 22px;
+
+    font-size:15px;
+
+}/* ==========================================
+   NOEL SERVIÇOS DIGITAIS
+   STYLE.CSS
+   Parte 3
+========================================== */
+
+
+/* ============================
+   CARRINHO
+============================ */
+
+.carrinho{
+
+    max-width:1000px;
+
+    margin:60px auto;
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+
+}
+
+.carrinho h2{
+
+    margin-bottom:25px;
+
+}
+
+#listaCarrinho{
+
+    min-height:80px;
+
+    margin-bottom:25px;
+
+}
+
+.resumo-carrinho{
+
+    border-top:1px solid #ddd;
+
+    padding-top:20px;
+
+}
+
+#total{
+
+    color:#00A651;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+#btnWhats{
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#25D366;
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+#btnWhats:hover{
+
+    background:#128C47;
+
+}
+
+
+/* ============================
+   SERVIÇOS
+============================ */
+
+.servicos{
+
+    background:#f8f8f8;
+
+    padding:70px 30px;
+
+}
+
+.cards-servicos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:30px;
+
+}
+
+.card-servico{
+
+    background:#111;
+
+    color:#fff;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+
+}
+
+.card-servico:hover{
+
+    transform:translateY(-10px);
+
+    background:#1b1b1b;
+
+}
+
+.card-servico i{
+
+    font-size:45px;
+
+    color:#FFD400;
+
+    margin-bottom:18px;
+
+}
+
+.card-servico h3{
+
+    margin-bottom:12px;
+
+    color:#fff;
+
+}
+
+.card-servico p{
+
+    color:#ddd;
+
+    font-size:15px;
+
+}
+
+
+/* ============================
+   CONTATO
+============================ */
+
+.contato{
+
+    background:#fff;
+
+    padding:60px 20px;
+
+    text-align:center;
+
+}
+
+.contato p{
+
+    margin:12px 0;
+
+    font-size:18px;
+
+}
+
+
+/* ============================
+   RODAPÉ
+============================ */
+
+footer{
+
+    background:#111;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+footer h2{
+
+    color:#FFD400;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+    color:#ddd;
+
+}
+
+
+/* ============================
+   RESPONSIVO
+============================ */
+
+@media (max-width:768px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:20px;
+
+    }
+
+    .logo{
+
+        width:150px;
+
+    }
+
+    .pesquisa{
+
+        width:100%;
+
+    }
+
+    .banner img{
+
+        height:280px;
+
+    }
+
+    .banner-texto{
+
+        left:20px;
+
+        right:20px;
+
+        max-width:100%;
+
+    }
+
+    .banner-texto h2{
+
+        font-size:30px;
+
+    }
+
+    .banner-texto p{
+
+        font-size:16px;
+
+    }
+
+    .lista-produtos{
+
+        grid-template-columns:1fr;
+
+        padding:20px;
+
+    }
+
+    .galeria-destaque{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .cards-graficos{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .cards-servicos{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .carrinho{
+
+        margin:25px 15px;
+
+        padding:20px;
+
+    }
+
+    .categoria{
+
+        gap:8px;
+
+    }
+
+    .categoria button{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* ============================
+   BARRA DE ROLAGEM
+============================ */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f1f1;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#FFD400;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#00AEEF;
+
+}
+
+
+/* ============================
+   SELEÇÃO DE TEXTO
+============================ */
+
+::selection{
+
+    background:#FFD400;
+
+    color:#111;
+
+}
