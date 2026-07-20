@@ -22,7 +22,7 @@
     "nome": "Kit Carregador Completo",
     "descricao": "Carregador com cabo de alta qualidade.",
     "categoria": "Carregadores",
-    "preco": 50,
+    "preco": 40,
     "imagem": "img/carregador.jpg"
   },
 
@@ -31,16 +31,16 @@
     "nome": "Cabo USB",
     "descricao": "Cabos para carregamento e dados.",
     "categoria": "Cabos",
-    "preco": 25,
+    "preco": 20,
     "imagem": "img/cabo.jpg"
   },
 
   {
     "id": 5,
-    "nome": "Fone Bluetooth",
+    "nome": "Fone Com fio",
     "descricao": "Fone sem fio com ótima qualidade sonora.",
     "categoria": "Fones",
-    "preco": 40,
+    "preco": 25,
     "imagem": "img/fone.jpg"
   },
 
@@ -73,10 +73,10 @@
 
   {
     "id": 9,
-    "nome": "Plastificação",
+    "nome": "Plastificação folha a4",
     "descricao": "Proteção para documentos e materiais.",
     "categoria": "Gráfica",
-    "preco": 5,
+    "preco": 7,
     "imagem": "img/plastificacao.jpg"
   },
 
