@@ -11,28 +11,28 @@ preco:20
 nome:"Película 3D",
 categoria:"Películas",
 imagem:"img/pelicula.jpg",
-preco:15
+preco:20
 },
 
 {
 nome:"Kit Carregador",
 categoria:"Carregadores",
 imagem:"img/carregador.jpg",
-preco:50
+preco:40
 },
 
 {
 nome:"Cabo USB",
 categoria:"Cabos",
 imagem:"img/cabo-usb.jpg",
-preco:25
+preco:20
 },
 
 {
-nome:"Fone de Ouvido",
+nome:"Fone de Ouvido com fios ",
 categoria:"Fones",
 imagem:"img/fone.jpg",
-preco:35
+preco:25
 },
 
 {
@@ -60,7 +60,7 @@ preco:7
 nome:"Encadernação",
 categoria:"Gráfica",
 imagem:"img/encadernadora.jpg",
-preco:5
+preco:10
 }
 
 ];
